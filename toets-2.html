@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <body>
+        <h1>Toetsversie 2</h1>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+            // Robotarm bibliotheek inladen
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            // Het level inladen
+            robotArm.loadLevel("exam 2");
+            robotArm.speed = 400;
+
+            // Deze code pas je NIET aan
+              
+            moveArm("right", 6);
+            fetchBlock("left", 2);
+            fetchBlock("right", 3);
+            fetchBlock("left", 6);
+            fetchBlock("left", 2);
+            fetchBlock("left", 4);
+            fetchBlock("left", 6);
+            fetchBlock("right", 3);
+//          */
+
+
+            /*
+            Je mist twee functies, de moveArm() en fetchBlock(). Dit is de reden dat de robotArm niet opstart en je 
+            een wit scherm krijgt. Deze functies bevatten beide twee parameters. Jij gaat die functies bouwen. 
+            Handig om te weten is dat de functie moveArm() ook wordt aangeroepen in de fetchBlock() functie. De fetchBlock() 
+            functie verplaatst de arm naar een bepaalde plaats, pakt een blokje, en verplaatst de arm weer naar waar hij begon. Je mag maximaal 28 regels code toevoegen.
+
+            */
+
+            // Jou instructies voor het werkend maken van de code volgen hier
+            
+            
+
+            // De door jou opgegeven instructies uitvoeren
+            robotArm.run();
+        </script>
+    </body>
+</html>
